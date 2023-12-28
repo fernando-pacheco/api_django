@@ -6,7 +6,8 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register('alunos', views.AlunosViewSet, basename='Alunos')
-router.register('Cursos', views.CursosViewSet, basename='Cursos')
+router.register('cursos', views.CursosViewSet, basename='Cursos')
+router.register('matriculas', views.MatriculasViewSet, basename='Matriculas')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
