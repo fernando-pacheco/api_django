@@ -1,0 +1,28 @@
+{
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "python": "cls ; python -u"
+    },
+    "code-runner.ignoreSelection": true,
+    "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
+    "workbench.iconTheme": "material-icon-theme",
+    "python.defaultInterpreterPath": "python",
+    "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.associations": {
+        "*html": "html",
+        "*.html": "django-html"
+    },
+    "window.zoomLevel": -1,
+    "redhat.telemetry.enabled": true,
+    "git.openRepositoryInParentFolders": "never",
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.useInlineCompletions": true
+}
