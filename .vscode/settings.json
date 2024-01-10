@@ -24,5 +24,13 @@
     "redhat.telemetry.enabled": true,
     "git.openRepositoryInParentFolders": "never",
     "emmet.triggerExpansionOnTab": true,
-    "emmet.useInlineCompletions": true
+    "emmet.useInlineCompletions": true,
+    "cSpell.words": [
+        "Aluno",
+        "nascimento"
+    ],
+    "cSpell.language": "pt-BR,pt,en",
+    "cSpell.enableFiletypes": [
+        "log"
+    ]
 }
