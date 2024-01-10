@@ -8,8 +8,10 @@ from validate_docbr import CPF
 import random, datetime
 from escola.models import  Aluno, Curso, Matricula
 
+
+fake = Faker('pt_BR')
+
 def criando_alunos(quantidade_de_pessoas):
-    fake = Faker('pt_BR')
     Faker.seed(10)
     for _ in range(quantidade_de_pessoas):
         cpf = CPF()
@@ -21,7 +23,6 @@ def criando_alunos(quantidade_de_pessoas):
         a.save()
 
 def criando_cursos(quantidade_de_cursos):
-    fake = Faker('pt_BR')
     Faker.seed(10)
     for _ in range(quantidade_de_cursos):
         codigo_curso = "{}{}-{}".format(random.choice("ABCDEF"), random.randrange(10, 99),random.randrange(1, 9))
