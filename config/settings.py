@@ -152,25 +152,18 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
 
-# CORS_ALLOW_CREDENTIALS = True
 
-# CORS_ALLOW_METHODS = [
-#     'DELETE',
-#     'GET',
-#     'OPTIONS',
-#     'PATCH',
-#     'POST',
-#     'PUT',
-# ]
+# Cache - REDIS
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://127.0.0.1:6379/1',       
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+        },
 
-# CORS_ALLOW_HEADERS = [
-#     'accept',
-#     'accept-encoding',
-#     'authorization',
-#     'content-type',
-#     'dnt',
-#     'origin',
-#     'user-agent',
-#     'x-csrftoken',
-#     'x-requested-with',
-# ]
+    }   
+}
+
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "default"
