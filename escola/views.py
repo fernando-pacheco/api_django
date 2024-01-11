@@ -19,6 +19,7 @@ class CursosViewSet(viewsets.ModelViewSet):
 
     queryset = Curso.objects.all()
     serializer_class = CursoSerializer
+    http_method_names = ['get', 'post', 'put', 'path']
 
     
     def create(self, request):
