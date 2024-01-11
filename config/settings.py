@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'escola',
     'rest_framework',
     'corsheaders',
+    'admin_honeypot',
 ]
 
 MIDDLEWARE = [

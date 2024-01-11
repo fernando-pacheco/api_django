@@ -12,10 +12,9 @@ router.register('cursos', CursosViewSet, basename='Cursos')
 router.register('matriculas', MatriculasViewSet, basename='Matriculas')
 
 urlpatterns = [
+    path('admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
     path('controle-geral/', admin.site.urls),
     path('', include(router.urls)),
     path('alunos/<int:pk>/matriculas', ListaMatriculasAluno.as_view()),
     path('cursos/<int:pk>/matriculas', ListaAlunosMatriculados.as_view())
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
