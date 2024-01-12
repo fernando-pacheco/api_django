@@ -1,5 +1,5 @@
 from rest_framework.test import APITestCase
-from escola.models import Aluno, Matricula
+from escola.models import Aluno
 from django.urls import reverse
 from rest_framework import status
 
